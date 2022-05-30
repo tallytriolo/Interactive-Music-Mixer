@@ -11,7 +11,7 @@ body {
 	background-image:url('../img/template-bckgrd.jpg');
    background-size:cover;
 	color:#FFF;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Gotham', sans-serif;
 	font-size:16px;
 }
 
@@ -65,6 +65,8 @@ body {
 	position: relative;
 }
 
+/*  ------------------ Header starts ----------------- */
+
 header {
 	position: relative;
 	top: 20px;
@@ -74,12 +76,29 @@ header {
 }
 
 header h1 {
-	font-size: 3.25em;
-   letter-spacing: 3px;
-	margin: 10px 0
+	font-size: 2em;
+   background-color: #1a66de;
+   padding: 1em 0em 1em 0em;
+   border-radius: 20px;
+   color: #f5ce01;
+	margin: 0;
 }
 
-header p, footer p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
+header p {
+   font-size: 1.4em;
+   font-family: 'Gotham Light', sans-serif;
+   color: #FFF;
+}
+
+.logo {
+   margin-top: 1em;
+}
+
+/*  ------------------ Header ends ----------------- */
+
+/*  ------------------ Footer starts ----------------- */
+
+footer p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
 
 footer {
 	position: inline;
@@ -103,3 +122,5 @@ footer {
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+/*  ------------------ Footer Ends ----------------- */
