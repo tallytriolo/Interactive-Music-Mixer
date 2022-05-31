@@ -1,1 +1,126 @@
-   .hidden { display: none;} 
+
+@charset "utf-8";
+
+/* CSS Document */
+
+.hidden { display: none;} 
+
+body {
+	margin: 0px;
+	border: 0px;
+	background-image:url('../img/template-bckgrd.jpg');
+   background-size:cover;
+	color:#FFF;
+	font-family: 'Gotham', sans-serif;
+	font-size:16px;
+}
+
+#game-boards {
+	width: 100%;
+	text-align: center;
+}
+
+.puzzle-pieces, .puzzle-board {
+	margin-top: 40px;
+	height: 400px;
+	display: inline-block;
+	border: medium solid #f5ce01;
+   border-radius: 50px;
+	background-color: none;
+	color: inherit;
+	overflow: hidden;
+}
+
+.puzzle-pieces {
+	width: 300px;
+	margin-right: 20px;
+}
+
+.puzzle-board { 
+	width:600px;
+}
+
+.puzzle-image {
+	width: 10px;
+   height: 10px;
+	display: block;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.puzzle-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.puzzle-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
+.drop-zone {
+	width: 49.5%;
+   height: 49.5%;
+   border: thin dashed white;
+   float: left;
+	position: relative;
+}
+
+/*  ------------------ Header starts ----------------- */
+
+header {
+	position: relative;
+	top: 20px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2em;
+   background-color: #1a66de;
+   padding: 1em 0em 1em 0em;
+   border-radius: 20px;
+   color: #f5ce01;
+	margin: 0;
+}
+
+header p {
+   font-size: 1.4em;
+   font-family: 'Gotham Light', sans-serif;
+   color: #FFF;
+}
+
+.logo {
+   margin-top: 1em;
+}
+
+/*  ------------------ Header ends ----------------- */
+
+/*  ------------------ Footer starts ----------------- */
+
+footer p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
+
+footer {
+	position: inline;
+	top: 65px;
+	width:1000px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#buttonHolder {
+	margin: 0px auto;
+	text-align:center;
+}
+
+#buttonHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#buttonHolder img:hover {
+	opacity:.5;
+}
+
+/*  ------------------ Footer Ends ----------------- */

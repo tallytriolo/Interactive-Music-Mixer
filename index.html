@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="utf-8">
+	<title>Brazilian Carnival Music Mixer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <title>Carnival Festival - Interactive Music Mixer </title>
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header id="headLine">
+        <img src="img/logo_music-mixer-01.png" class="logo" alt="Logo Brazilian Music" width="400">
         <h1>drag and drop!</h1>
         <p>Let's make a samba!</p>
     </header>
@@ -26,24 +28,18 @@
         <!-- we want to drop the draggable pieces here -->
         <div class="puzzle-board"></div>
     </section>
-
+  
     <footer>
-        <!-- Add the instruments SVGs here -->
-        <p>Choose the instruments you want to play!</p>
-        <nav id="buttonHolder">
-            <img src="#"  data-bgref="0" alt="#">
-            <img src="#"  data-bgref="1" alt="#">
-            <img src="#" data-bgref="2" alt="#">
-            <img src="#" data-bgref="3" alt="#">
-            <img src="#" data-bgref="3" alt="#">
-
-        </nav>
-    </footer>
-
-    <script src="script/main.js"></script>
-
-           
-
-</body>
-
-</html>
+        <h2 class="hidden">Dancers</h2>
+		<p>Choose your dancer!</p>
+		<nav id="buttonHolder">
+			<img src="img/dancer-01.png" data-bgref="0" alt="Dancer 1">
+			<img src="img/dancer-02.png" data-bgref="1" alt="Dancer 2">
+	    	<img src="img/dancer-03.png" data-bgref="2" alt="Dancer 3">
+			<img src="img/dancer-04.png" data-bgref="3" alt="Dancer 4">
+		</nav>
+	</footer>
+    
+        <script src="script/main.js"></script>
+    </body>
+    </html>
