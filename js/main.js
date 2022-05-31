@@ -1,16 +1,15 @@
 (() => {
     
-    console.log('fired! javascript is working!');
 
-    let theBadge = document.querySelectorAll('svg');
+    let theInstruments = document.querySelectorAll("#buttonHolder svg");
 
-    function logMyId() {
+    function holdInstruments() {
         debugger; 
 
         
         console.log(this.id);
     }
-    theBadge.forEach(badge => badge.addEventListener('click', logMyId));
+    theInstruments.forEach(item => item.addEventListener('click', holdInstruments));
 
 }) (); 
 
