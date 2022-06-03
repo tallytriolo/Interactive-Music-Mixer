@@ -24,6 +24,9 @@ You may:
 
 - [Brazilian Carnival Dancer](https://www.freepik.com/free-vector/brazilian-carnival-dancer-collection_6744383.htm?query=carnaval&collectionId=2318&&position=0&from_view=collections)
 
+- [Samba Instruments](https://br.pinterest.com/pin/150589181281664293/)
+
+
 ## Contributing 
 
 Fork it!
