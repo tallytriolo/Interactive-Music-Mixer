@@ -1,10 +1,9 @@
-# Interactive-Music-Mixer
+# Brazilian Carnival Music Mixer
+## Know Brazilian Carnival Music Mixer. And create your own samba song!
 
-** MidTerm Assignment - 2nd Term - Summer 2022 - Multimedia Authoring 2 ** 
-
-Interactive-Music-Mixer is a Midterm Project from Multimedia Authoring 2 at Fanshawe College. The goal is to plan and build a collaborative, interactive music mixer player using design, motion, HTML, CSS and JavaScript. 
 The user will be able to drag and drop some musical instruments to create a dynamic audio experience. 
-The theme chosen by the team is Carnival in Brazil, which will have musical instruments usually played in carnival festivals in Brazil. The user will be able to create audio similar to "samba" from Brazilian culture. 
+The theme chosen is Carnival in Brazil, which will have musical instruments usually played in carnival festivals in Brazil. The user will be able to create audio similar to "samba" from Brazilian culture;it is possible to choose between 4 dancers to be in the background and four instruments!
+Have fun!!!
 
 # Installation
 
