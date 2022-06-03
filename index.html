@@ -1,47 +1,59 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
 <meta charset="utf-8">
-	<title>Brazilian Carnival Music Mixer</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+	<title>Drag & Drop Carnival Music Mixer</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-    <header id="headLine">
-        <h1>drag and drop!</h1>
-        <p>Let's make a samba!</p>
-    </header>
-    <section id="game-boards">
-        <!-- these are the draggable pieces -->
-        <div class="puzzle-pieces">
-            <img src="#" class="#" alt="#">
-            <img src="#" class="#" alt="#">
-            <img src="#" class="#" alt="#">
-            <img src="#" class="#" alt="#">
-        </div>
+	<header id="headLine">
+		<h1 class="hidden">drag and drop!</h1>
+		<img src="images/logo_carnival_music_mixer.png" alt="Logo Carnival Music mixer" width="400">
+	</header>
 
-        <!-- we want to drop the draggable pieces here -->
-        <div class="puzzle-board"></div>
-    </section>
+	<section id="icons">
+		<!-- these are the draggable pieces -->
+		<div class="instruments">
+			<h2 class="hidden">Drag Zone</h2>
+			<h3>Drag up to four instruments...</h3>
+			<img id="topLeft" draggable src="images/Candombe drum.png" class="instruments-icon" alt="top left">
+			<img id="topRight" draggable src="images/Cymbal.png" class="instruments-icon" alt="top right">
+			<img id="bottomLeft" draggable src="images/Maracas.png" class="instruments-icon" alt="bottom left">
+			<img id="topLeft" draggable src="images/Snare_drum.png" class="instruments-icon" alt="top left">
+			<img id="topRight" draggable src="images/Tambourine2.png" class="instruments-icon" alt="top right">
+			<img id="bottomLeft" draggable src="images//Tambourine.png" class="instruments-icon" alt="bottom left">
+			<img id="bottomRight" draggable src="images/Twin-horned.png" class="instruments-icon" alt="bottom right">
+			<img id="topLeft" draggable src="images/Ukulele.png" class="instruments-icon" alt="top left">
+			<img id="topRight" draggable src="images/Repinique.png" class="instruments-icon" alt="bottom right">
+		</div>
 
-    <footer>
-        <!-- Add the instruments SVGs here -->
-        <p>Choose the instruments you want to play!</p>
-        <nav id="buttonHolder">
-            <img src="#"  data-bgref="0" alt="#">
-            <img src="#"  data-bgref="1" alt="#">
-            <img src="#" data-bgref="2" alt="#">
-            <img src="#" data-bgref="3" alt="#">
-            <img src="#" data-bgref="3" alt="#">
+		<!-- we want to drop the draggable pieces here -->
+		<div class="puzzle-board">
+			<h2 class="hidden">Drop Zone</h2>
+			<h3>... and Let's play a Samba!</h3>
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
 
-        </nav>
-    </footer>
+	</section>
 
-    <script src="script/main.js"></script>
+	<footer>
+		<h2 class="hidden">Dancers</h2>
+		<p>Choose your dancer!</p>
+		<nav id="buttonHolder">
+			<img src="images/dancer-01.png" data-bgref="0" alt="dancer">
+			<img src="images/dancer-02.png" data-bgref="1" alt="dancer">
+	    	<img src="images/dancer-03.png" data-bgref="2" alt="dancer">
+			<img src="images/dancer-04.png" data-bgref="3" alt="dancer">
+		</nav>
+	</footer>
 
-    </body>
-    </html>
+	<script src="script/main.js"></script>
+</body>
+</html>
