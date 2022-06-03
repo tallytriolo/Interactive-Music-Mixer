@@ -1,71 +1,96 @@
-
 @charset "utf-8";
-
 /* CSS Document */
-
-.hidden { display: none;} 
 
 body {
 	margin: 0px;
 	border: 0px;
-	background-image:url('../img/template-bckgrd.jpg');
-   background-size:cover;
+	background-image:url(../img/background_music-mixer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f4bb03;
 	color:#FFF;
-	font-family: 'Gotham', sans-serif;
+	font-family: 'Dosis', sans-serif;
 	font-size:16px;
 }
 
-#game-boards {
+#icons {
 	width: 100%;
 	text-align: center;
 }
 
-.puzzle-pieces, .puzzle-board {
+.hidden {
+	display: none;
+}
+
+.instruments {
+	margin-top: 1em;
+	height: 400px;
+	display: inline-block;
+	border-radius: 20px;
+	color: inherit;
+	width: 350px;
+	margin-right: 20px;
+}
+
+.puzzle-board {
 	margin-top: 40px;
 	height: 400px;
 	display: inline-block;
-	border: medium solid #f5ce01;
-   border-radius: 50px;
-	background-color: none;
+	border-radius: 20px;
+	background-color: #f4bb03;
 	color: inherit;
 	overflow: hidden;
 }
 
-.puzzle-pieces {
-	width: 300px;
-	margin-right: 20px;
-}
-
 .puzzle-board { 
-	width:600px;
+	width:600px; 
+	/* background-image: url('../images/backGround0.jpg');*/
+	background-repeat: no-repeat;
 }
 
-.puzzle-image {
-	width: 10px;
-   height: 10px;
-	display: block;
-	padding: 1px;
+.instruments-icon {
+	width: 30%;
 	cursor: pointer;
+	margin: 4px;
 }
 
-.puzzle-image:nth-child(even) {
+/* .instruments-icon:nth-child(even) {
 	float: right;
 	clear: both;
 }
-.puzzle-image:nth-child(odd) {
+.instruments-icon:nth-child(odd) {
 	float: left;
 	clear: both;
-}
+} */
 
 .drop-zone {
 	width: 49.5%;
-   height: 49.5%;
-   border: thin dashed white;
-   float: left;
+  	height: 49.5%;
+  	border: thin dashed white;
+  	float: left;
 	position: relative;
 }
 
-/*  ------------------ Header starts ----------------- */
+.drop-zone img {
+	width: 80% !important;
+	float: none;
+	position: absolute;
+	padding: 0;
+}
+
+.tr img {
+	bottom: 0;
+}
+
+.tl img {
+	right: 0;
+	bottom: 0;
+}
+
+.bl img {
+	right: 0;
+}
+
 
 header {
 	position: relative;
@@ -76,51 +101,43 @@ header {
 }
 
 header h1 {
-	font-size: 2em;
-   background-color: #1a66de;
-   padding: 1em 0em 1em 0em;
-   border-radius: 20px;
-   color: #f5ce01;
-	margin: 0;
+	font-size: 3.25em;
+  	letter-spacing: 3px;
+	margin: 10px 0
 }
 
-header p {
-   font-size: 1.4em;
-   font-family: 'Gotham Light', sans-serif;
-   color: #FFF;
+header p, footer p { font-size: 1.7em; font-weight: bold; letter-spacing: 2px; margin: 10px 0 }
+
+h3 {
+	font-weight: normal;
 }
-
-.logo {
-   margin-top: 1em;
-}
-
-/*  ------------------ Header ends ----------------- */
-
-/*  ------------------ Footer starts ----------------- */
-
-footer p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
 
 footer {
-	position: inline;
-	top: 65px;
-	width:1000px;
+	position: relative;
+	top: 20px;
+	width: 800px;
 	margin: 0px auto;
 	text-align: center;
 }
 
+footer p {
+	font-weight: bold;
+	margin: 0;
+}
+
 #buttonHolder {
-	margin: 0px auto;
-	text-align:center;
+	margin: 10px auto;
+	border-radius: 20px;
+	background-color: #f2eaa0;
 }
 
 #buttonHolder img {
 	margin-left: 5px;
 	margin-right: 5px;
+	padding: 15px;
 	cursor: pointer;
 }
 
 #buttonHolder img:hover {
 	opacity:.5;
 }
-
-/*  ------------------ Footer Ends ----------------- */
