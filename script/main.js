@@ -25,7 +25,7 @@
 		// the "this" keyword refers to the element that triggers this function (the nav button we click with the custom data attribute of bgref)
 		// debugger;
 		// update the background image thumb pieces
-		icons.style.backgroundImage = `url(images/backGround${this.dataset.bgref}.jpg)`;
+		icons.style.backgroundImage = `url(img/backGround${this.dataset.bgref}.jpg)`;
 	}
 
 	function allowDrag(event) {
