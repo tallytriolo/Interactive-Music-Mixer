@@ -21,16 +21,21 @@
 		<div class="instruments">
 			<h2 class="hidden">Drag Zone</h2>
 			<h3>Drag up to four instruments...</h3>
-			<img id="topLeft" draggable src="img/Candombe_drum.png" class="instruments-icon" alt="top left">
-			<img id="topRight" draggable src="img/Cymbal.png" class="instruments-icon" alt="top right">
-			<img id="bottomLeft" draggable src="img/Maracas.png" class="instruments-icon" alt="bottom left">
-			<img id="topLeft" draggable src="img/Snare_drum.png" class="instruments-icon" alt="top left">
-			<img id="topRight" draggable src="img/Tambourine2.png" class="instruments-icon" alt="top right">
-			<img id="bottomLeft" draggable src="img//Tambourine.png" class="instruments-icon" alt="bottom left">
-			<img id="bottomRight" draggable src="img/Twin-horned.png" class="instruments-icon" alt="bottom right">
-			<img id="topLeft" draggable src="img/Ukulele.png" class="instruments-icon" alt="top left">
-			<img id="topRight" draggable src="img/Repinique.png" class="instruments-icon" alt="bottom right">
+			<img  id="candombe" draggable src="img/Candombe_drum.png" class="instruments-icon" alt="candombe">
+			<img id="cymbal" draggable src="img/Cymbal.png" class="instruments-icon" alt="top right">
+			<img data-trackref="maracas" id="maracas" draggable src="img/Maracas.png" class="instruments-icon" alt="bottom left">
+			<img data-trackref="snare" id="snare" draggable src="img/Snare_drum.png" class="instruments-icon" alt="Snare">
+			<img id="tambourineTwo" draggable src="img/Tambourine2.png" class="instruments-icon" alt="top right">
+			<img data-trackref="tambourine_audio" id="tambourineOne" draggable src="img//Tambourine.png" class="instruments-icon" alt="Tambourine">
+			<img data-trackref="agogo" id="horned" draggable src="img/Twin-horned.png" class="instruments-icon" alt="Twin Horned">
+			<img id="ukulele" draggable src="img/Ukulele.png" class="instruments-icon" alt="top left">
+			<img id="repinique" draggable src="img/Repinique.png" class="instruments-icon" alt="bottom right">
 		</div>
+
+		<!-- Audio Elements -->
+		<h2 class="hidden"> Audio Tracks</h2>
+		<audio id="myAudio" src="audio/tambourine_audio.mp3"></audio>
+
 
 		<!-- we want to drop the draggable pieces here -->
 		<div class="puzzle-board">
