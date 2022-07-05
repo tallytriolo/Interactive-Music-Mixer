@@ -9,9 +9,6 @@
 		
 
 
-
-	
-
 	function changeBgImg() {
 		
 		icons.style.backgroundImage = `url(img/backGround${this.dataset.bgref}.jpg)`;

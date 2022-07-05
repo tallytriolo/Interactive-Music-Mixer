@@ -72,7 +72,7 @@ body {
 }
 
 .drop-zone img {
-	width: 80% !important;
+	width: 30% !important;
 	float: none;
 	position: absolute;
 	padding: 0;
@@ -83,14 +83,52 @@ body {
 }
 
 .tl img {
-	right: 0;
+	right: 150px;
 	bottom: 0;
 }
 
 .bl img {
-	right: 0;
+	right: 150px;
 }
 
+.btnReset {
+	color: #fff;
+	cursor: pointer;
+	background-color: #ff9304;
+	padding-top: 10px;
+	margin-left: 430px;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.btnReset:hover {
+	color: #f2eaa0 !important;
+	background-color: #f4bb03;
+
+} 
+
+.btnReset:hover:before {
+	left: 0%;
+	right: 0;
+	width: 100%;
+}
+
+.btnReset:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #1a66de !important;
+	background: #ff9304;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
 
 header {
 	position: relative;
