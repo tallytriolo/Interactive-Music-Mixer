@@ -214,7 +214,6 @@ footer p {
 	display: block;
 	position: relative;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-
 }
 
 .btnReset:hover {
@@ -237,10 +236,3 @@ footer p {
 	background: #F7CA18;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
-/* .btnReset {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-} */
