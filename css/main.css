@@ -179,3 +179,68 @@ footer p {
 #buttonHolder img:hover {
 	opacity:.5;
 }
+
+.btnReset {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 17px;
+	padding-bottom: 5px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 15px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+
+}
+
+.btnReset a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.btnReset {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.btnReset:hover {
+	background-color: transparent;
+}
+.btnReset:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.btnReset:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+/* .btnReset {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+} */
