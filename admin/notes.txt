@@ -1,0 +1,10 @@
+#INTERACTIVE MUSIC MIXER
+##Next steps
+
+We need to fix the following bugs:
+
+- Allow only four instruments at a time. After adding the four instruments, switching or adding more instruments should be prohibited unless the user presses the "reset" button.
+
+- Apply a page reset function on the "reset" button to reset all drag and drop instruments.
+
+- Fix the error in the instruments div and position it by dragging the instrument. Other instruments must not descend or push other parts.
