@@ -31,10 +31,18 @@
 		event.preventDefault();
 		console.log("dropped on me");
 
-		let droppedElId = event.dataTransfer.getData("draggedEl");
-
-		
-		this.appendChild(document.querySelector(`#${droppedElId}`));
+		if(this.childNodes.length == 0) {
+			let droppedElId = event.dataTransfer.getData("draggedEl");
+			let droppedElement = document.querySelector(`#${droppedElId}`);		
+			let audio = document.createElement("audio");
+			
+			this.appendChild(droppedElement);
+			audio.id = "audio_" + droppedElId;
+			audio.src = 'audio/' + droppedElement.dataset.trackref + '.mp3';
+			audio.loop = true;
+			this.appendChild(audio);
+			audio.play()
+		}
 	}
 
 	function loadAudioTrack() {
@@ -56,6 +64,6 @@
 		zone.addEventListener("drop", allowDrop);
 	});
 	
-	instruments.forEach(thumb => thumb.addEventListener('click',loadAudioTrack));
+	// instruments.forEach(thumb => thumb.addEventListener('click',loadAudioTrack));
 
 })();
