@@ -5,6 +5,7 @@ body {
 	margin: 0px;
 	border: 0px;
 	background-image:url(../img/background_music-mixer.jpg);
+	height: 1000px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #f4bb03;
@@ -13,27 +14,26 @@ body {
 	font-size:16px;
 }
 
+.hidden {
+	display: none;
+}
+
+/* ---- Instruments and Puzzle Board ---- */
+
 #icons {
 	width: 100%;
 	text-align: center;
 }
 
-.hidden {
-	display: none;
-}
-
 .instruments {
-	margin-top: 1em;
-	height: 400px;
-	display: inline-block;
-	border-radius: 20px;
-	color: inherit;
 	width: 350px;
 	margin-right: 20px;
+	height: 430px;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .puzzle-board {
-	margin-top: 40px;
 	height: 400px;
 	display: inline-block;
 	border-radius: 20px;
@@ -44,7 +44,6 @@ body {
 
 .puzzle-board { 
 	width:600px; 
-	/* background-image: url('../images/backGround0.jpg');*/
 	background-repeat: no-repeat;
 }
 
@@ -53,15 +52,6 @@ body {
 	cursor: pointer;
 	margin: 4px;
 }
-
-/* .instruments-icon:nth-child(even) {
-	float: right;
-	clear: both;
-}
-.instruments-icon:nth-child(odd) {
-	float: left;
-	clear: both;
-} */
 
 .drop-zone {
 	width: 49.5%;
@@ -91,50 +81,14 @@ body {
 	right: 150px;
 }
 
-.btnReset {
-	color: #fff;
-	cursor: pointer;
-	background-color: #ff9304;
-	padding-top: 10px;
-	margin-left: 430px;
-	margin-top: 10px;
-	width: 100px;
-	height: 30px;
-	border-radius: 10px;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-.btnReset:hover {
-	color: #f2eaa0 !important;
-	background-color: #f4bb03;
-
-} 
-
-.btnReset:hover:before {
-	left: 0%;
-	right: 0;
-	width: 100%;
-}
-
-.btnReset:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	color: #1a66de !important;
-	background: #ff9304;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-}
+/* ---- Header ---- */
 
 header {
 	position: relative;
 	top: 20px;
 	width:600px;
 	margin: 0px auto;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
@@ -144,15 +98,27 @@ header h1 {
 	margin: 10px 0
 }
 
-header p, footer p { font-size: 1.7em; font-weight: bold; letter-spacing: 2px; margin: 10px 0 }
+header p, footer p { 
+	font-size: 1.7em; 
+	font-weight: bold; 
+	padding: 10px;
+	letter-spacing: 2px; 
+}
 
 h3 {
-	font-weight: normal;
+	font-weight: bold;
+	letter-spacing: 1px; 
 }
+
+#headLine {
+	margin-bottom: 10px;
+}
+
+/* ---- Footer ---- */
 
 footer {
 	position: relative;
-	top: 20px;
+	top: 30px;
 	width: 800px;
 	margin: 0px auto;
 	text-align: center;
@@ -164,7 +130,8 @@ footer p {
 }
 
 #buttonHolder {
-	margin: 10px auto;
+	margin: 0px auto;
+	padding-top: 10px;
 	border-radius: 20px;
 	background-color: #f2eaa0;
 }
@@ -172,67 +139,10 @@ footer p {
 #buttonHolder img {
 	margin-left: 5px;
 	margin-right: 5px;
-	padding: 15px;
+	padding: 10px;
 	cursor: pointer;
 }
 
 #buttonHolder img:hover {
 	opacity:.5;
-}
-
-.btnReset {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 17px;
-	padding-bottom: 5px;
-	color: #fff;
-	font-size:14px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 15px;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-
-}
-
-.btnReset a {
-	text-decoration: none;
-	color: #FFF;
-}
-
-.btnReset {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-.btnReset:hover {
-	background-color: transparent;
-}
-.btnReset:hover:before {
-	left: 0%;
-	right: auto;
-	width: 100%;
-}
-.btnReset:before {
-	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	height: 100%;
-	width: 0px;
-	z-index: -1;
-	content: '';
-	background: #F7CA18;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
